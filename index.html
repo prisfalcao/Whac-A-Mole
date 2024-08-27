@@ -13,10 +13,151 @@
         </section>
         <footer>
             <div class="nextPage">
-                <a href="regras.html" class="circulo">
+                <a href="#header-regras" class="circulo">
                     <img src="images/arrow-down.png" alt="seta para baixo" class="arrow">
                 </a>
             </div>
         </footer>
+        <header id="header-regras">
+            <div class="previousPage">
+                <a href="index.html">
+                    <img src="images/arrow-up.png" alt="seta para cima" class="arrow">
+                </a>
+            </div>
+        </header>
+        <section class="regras">
+            <div class="contentBox">
+                <h2 class="heading">Regras do jogo:</h2>
+                <p class="text">
+                    O jogo consiste em acertar as toupeiras na tela com o mouse, que vai representar o martelo.
+                    Cada acerto nas toupeiras somará pontos no placar digital.
+                    Os erros e movimentos perdidos também serão contabilizados, e o saldo exibido logo abaixo.
+                </p>
+                <p class="text">
+                    Ao final do jogo, será exibido o placar final, e dependendo da sua pontuação, você entra na página de recordes do jogo.
+                    Desafie seus amigos, façam suas apostas, e dirvirtam-se!
+                </p>
+            </div>
+            <div class="imgBox"></div>
+        </section>
+        <footer>
+            <div class="nextPage">
+                <a href="#header-tabuleiro" class="circulo">
+                    <img src="images/arrow-down.png" alt="seta para baixo" class="arrow">
+                </a>
+            </div>
+        </footer>
+        <header id="header-tabuleiro">
+            <div class="previousPage">
+                <a href="#header-regras">
+                    <img src="images/arrow-up.png" alt="seta para cima" class="arrow">
+                </a>
+            </div>
+        </header>
+        <section>
+        <div>
+            <img src="images/hole.png" alt="buraco vazio" class="hole" id="buraco0">
+            <img src="images/hole.png" alt="buraco vazio" class="hole" id="buraco1">
+            <img src="images/hole.png" alt="buraco vazio" class="hole" id="buraco2">
+            <img src="images/hole.png" alt="buraco vazio" class="hole" id="buraco3">
+            <img src="images/hole.png" alt="buraco vazio" class="hole" id="buraco4">
+        </div>
+        <div class="pontos">
+            <table>
+                <thead>
+                    <tr><th colspan="2">Pontuação</th>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                        <td>Acertos:</td>
+                        <td class="pontuacao" id="acertos">
+                            <img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Perdidos:</td>
+                        <td class="pontuacao" id="perdidos">
+                            <img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Errados:</td>
+                        <td class="pontuacao" id="errados">
+                            <img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saldo:</td>
+                        <td class="pontuacao" id="saldo">
+                            <img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0"><img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="start" class="btn btn-light">Start</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+        <footer>
+            <div class="nextPage">
+                <a href="#header-recordes" class="circulo">
+                    <img src="images/arrow-down.png" alt="seta para baixo" class="arrow">
+                </a>
+            </div>
+        </footer>
+        <header id="header-recordes">
+            <div class="previousPage">
+                <a href="#header-tabuleiro">
+                    <img src="images/arrow-up.png" alt="seta para cima" class="arrow">
+                </a>
+            </div>
+        </header>
+        <section class="records">
+            <div class="contentBox">
+                <h2>Records - Top 10</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Colocação</th><th>Nome</th><th>Pontos</th><th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td><td>Lara Croft</td><td>654</td><td>20/08/2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>Gamora</td><td>458</td><td>15/07/2024</td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>Pudol</td><td>455</td><td>25/08/2024</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>Aurora</td><td>346</td><td>06/03/2024</td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td>Pris</td><td>325</td><td>21/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>Joy</td><td>323</td><td>16/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>7</td><td>Princesa</td><td>317</td><td>25/06/2020</td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td>Elvis</td><td>287</td><td>09/07/2022</td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td>Clark</td><td>232</td><td>21/07/2023</td>
+                        </tr>
+                        <tr>
+                            <td>10</td><td>Kent</td><td>222</td><td>25/12/2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </body>
 </html>
