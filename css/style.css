@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 100vh;
+    padding: 0;
+}
+
+.header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nextPage {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.previousPage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.circulo {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    margin: 10px;
+    width: 24px !important;
+    height: 24px !important;
+    z-index: 4;
+}
+
+.regras {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #D0D0D0;
+}
+
+.regras .contentBox, 
+.regras .imgBox {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: left;
+    background-color: #C0C0C0;
+}
+
+.regras .imgBox {
+    background: url(../images/Mole.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabuleiro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF00;
+}
+
+.gramado {
+    width: 536px;
+    height: 536px;
+    background-color: #008000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    cursor: url(../images/hammer.png), crosshair;
+    padding: 0px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.gramado img {
+    padding: 25px 50px 25px 50px;
+    box-sizing: content-box;
+    width: 76px;
+    height: 61px;
+}
+
+.pontos {
+    width: 536px;
+    height: 536px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45 deg, #80FF80 25%, transparent 75%, #80FF80 75%, #80FF80), linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
+    background-size: 20px 20px;
+}
+
+.pontos th {
+    font-size: 50px;
+    font-family: 'Bungee Spice', sans-serif;
+    text-align: center;
+}
+
+.pontos td:first-child {
+    text-align: right;
+    font-size: 36px;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+.pontuacao {
+    font-family: 'Raleway Dots', sans-serif;
+}
+
+#start {
+    width: 100%;
+    font-size: 36px;
+    border: 1px solid #000000;
+}
+
+.recordes {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recordes h2 {
+    padding-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.recordes table {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-collapse: collapse;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.recordes tr th {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.recordes tr {
+    font-size: 36px;
+}
+
+.recordes td {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.recordes tr:nth-child(even) {
+    background-color: #C0C0C0;
+}
+
+.recordes tr td:first-child, td:nth-child(3) {
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 991px) {
+    .regras {
+        flex-direction: column;
+    }
+
+    .regras .imgBox {
+        background-size: contain;
+    }
+
+    .tabuleiro {
+        flex-direction: column-reverse;
+    }
+
+    .pontos th {
+        font-size: 30px;
+    }
+
+    .pontos td:first-child {
+        font-size: 20px;
+    }
+
+    .gramado {
+        width: 400px;
+        height: 400px;
+    }
+
+    .pontos {
+        width: 400px;
+        height: 400px;
+    }
+
+    .gramado img {
+        padding: 10px 30px 10px 30px;
+    }
+
+    .recordes tr th {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #FFFFFF;
+        background-color: #000000;
+        text-align: center;
+    }
+
+    .recordes tr {
+        font-size: 18px;
+    }
+
+    .recordes td {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
