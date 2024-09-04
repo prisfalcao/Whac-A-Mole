@@ -26,14 +26,14 @@ function start() {
 function sobeToupeira() {
     var buraco = Math.floor(Math.random() * 5);
     var objBuraco = document.getElementById('buraco' + buraco);
-    objBuraco.src = './images/hole-mole.png';
+    objBuraco.src = 'images/hole-mole.png';
     timer = setTimeout(tiraToupeira, janela, buraco);
     setTimeout(sobeToupeira, intervalo);
 }
 
 function tiraToupeira(buraco) {
     var objBuraco = document.getElementById('buraco' + buraco);
-    objBuraco.src = './images/hole.png';
+    objBuraco.src = 'images/hole.png';
     perdidos++;
     mostraPontuacao();
 }
@@ -55,11 +55,11 @@ function mostraPontuacaoDe(display, valor) {
     let dezena = parseInt((valor/10)%10);
     let unidade = (valor % 10);
 
-    objCentena.src = './images/caractere_' + centena + '.gif';
+    objCentena.src = 'images/caractere_' + centena + '.gif';
     objCentena.alt = centena;
-    objDezena.src = './images/caractere_' + dezena + '.gif';
+    objDezena.src = 'images/caractere_' + dezena + '.gif';
     objDezena.alt = dezena;
-    objUnidade.src = './images/caractere_' + unidade + '.gif';
+    objUnidade.src = 'images/caractere_' + unidade + '.gif';
     objUnidade.alt = unidade;
 }
 
@@ -74,7 +74,7 @@ function marteloCima() {
 function martelada(evento) {
     if (evento.target.src.includes('hole-mole')) {
         acertos++;
-        evento.target.src = './images/hole.png';
+        evento.target.src = 'images/hole.png';
         clearTimeout(timer);
     }
     else {
