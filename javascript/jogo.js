@@ -1,8 +1,8 @@
 var acertos = 0;
 var perdidos = 0;
 var errados = 0;
-var intervalo = 5000;
-var janela = 2000;
+var intervalo = 1500;
+var janela = 1000;
 var timer = null;
 
 onload = function () {
